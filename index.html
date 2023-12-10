@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Yasmeen Shaik</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Portfolio Website</h1>
+                <ul id="menus">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Education </a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Yasmeen Shaik</h1>
+                 <p>I am a Frontend Developer</p>
+                <h2>I love learning about new things</h2>
+              
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-col-1">
+                    <img src="student.jpg">
+                </div>
+                <div class="abt-col-2">
+                    <h1 class="sub-header">About me </h1>
+
+                    <div class="tabs">
+                        <p class="tab-links act-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-conts act-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br/>English,Hindi and Telugu</li>
+                            <li><span>Programming Languages</span><br/>C, Python,Java</li>
+                            <li><span>Front-End</span><br/> HTML, CSS, Javascript</li>
+                            <li><span>Back-End</span><br/>PHP</li>
+                            <li><span>Database</span><br/>SQL</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-conts" id="experience">
+                        <ul>
+                            <li>* Internship on AI at Pantech Solutions</li>
+                            <li>* Internship in python at Pantech Solution</li>
+                            <li>* Currently web developer at Bharat Intern</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="resume">
+                    <button class="btn btncv">Hire Me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div id="services">
+          <div class="container">
+              <h1 class="sub-header">Education</h1>
+
+              <div class="services-list">
+                  <div>
+                      <h2>B.Tech</h2>
+                      <p>RVR & JC College of Engineering</p>
+                      <p>CGPA: 9.79</p>
+                  </div>
+
+                  <div>
+
+                      <h2>Intermediate</h2>
+                      <p>Sri Chaitanya Junior College </p>
+                      <p>Marks: 983/1000</p>
+                  </div>
+
+                  <div>
+
+                      <h2>SSC</h2>
+                      <p>St. Patrick's High School</p>
+                      <p>GPA: 10/10</p>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+  <br><br>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-header">Projects</h1>
+
+            <div class="services-list">
+                <div>
+                    <h2>Hotstar Clone</h2>
+                    <p>Built a simple Hotstar Clone project which is a web-based 
+                    application that provides a user-friendly interface for discovering and 
+                    viewing a library of TV shows and movies.
+                    Technologies used: HTML, CSS, JavaScript</p>
+                </div>
+
+                <div>
+                   
+                    <h2>Tic-Tac-Toe Game</h2>
+                    <p>This game was developed in python. The game allows two players
+                    to take turns marking X and O on a 3x3 grid.
+                    Technologies used: Python</p>
+                </div>
+
+                <div>
+                  
+                    <h2>Netflix Clone</h2>
+                    <p>A Netflix clone project is a web application designed to replicate the core features and appearance of the official Netflix streaming service. It typically includes a user-friendly interface with sections for browsing movies and TV shows</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+<br><br>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-l">
+                    <h1 class="sub-header">Let's Connect</h1>
+                    <p> <i class="fa-solid fa-envelope"></i>yasmeenshaik1211@gmail.com</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/yasmeen-shaik-659487259/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Yasmeen1211" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="contact-r">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" id=""  rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btncv">Submit</button>
+                    </form>
+                    <span id="submit-msg"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>©️ 2023 Yasmeen Shaik. All rights reserved.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
