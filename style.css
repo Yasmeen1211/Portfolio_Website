@@ -26,6 +26,43 @@ body {
 .container {
     padding: 10px 10%;
 }
+.header-text {
+    padding: 40px 20px; /* Adds space around the text */
+    text-align: center; /* Centers the text */
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Darker text for better readability */
+    border-radius: 10px; /* Adds subtle rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for a polished look */
+    max-width: 800px; /* Ensures the content doesn't stretch too wide */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+.header-text h1 {
+    font-size: 2.5rem; /* Adjusts the main heading size */
+    margin-bottom: 10px; /* Adds space below the heading */
+    color: #222; /* Slightly darker heading color */
+}
+
+.header-text p {
+    font-size: 1.2rem; /* Adjusts the paragraph size */
+    margin-bottom: 10px; /* Adds spacing between lines */
+}
+
+.header-text h2 {
+    font-size: 1.5rem; /* Adjusts the size of the subheading */
+    color: #555; /* Lighter color for subheading */
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        flex-direction: column; /* Stacks content on smaller screens */
+        align-items: center; /* Centers text and image */
+        text-align: center;
+    }
+    .header-image img {
+        margin-top: 20px; /* Adds spacing between text and image */
+    }
+}
 
 nav {
     display: flex;
@@ -91,8 +128,13 @@ nav .fa-solid {
 }
 /**********About section**********/
 #about {
-    padding: 80px 0;
-    color: #ababab;
+    /* padding: 80px 0;
+    color: #ababab; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* Make the section fill the viewport height */
+    padding: 0 2rem;
 }
 
 .row {
@@ -100,28 +142,23 @@ nav .fa-solid {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.abt-col-1 {
-    flex-basis: 35%;
-}
-
-.abt-col-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
 .abt-col-2 {
-    flex-basis: 60%;
+    flex: 1;
+    max-width: 80%; 
+    /* Adjust width for the text */
+    text-align: left;
 }
 
 .abt-col-2 p {
     line-height: 1.8;
+     margin-top:5px; 
 }
 
 .sub-header {
     font-size: 60px;
     font-weight: 600px;
     color: white;
+     margin-bottom: 20px; 
 }
 
 .tabs {
@@ -244,6 +281,10 @@ nav .fa-solid {
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+}
+.card a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit color from the card */
 }
 
 .layer {
