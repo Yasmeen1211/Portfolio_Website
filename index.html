@@ -1,180 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Yasmeen Shaik</title>
+    <title>Yasmeen Shaik - Portfolio</title>
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div id="header">
+    <!-- Header Section -->
+    <header id="header">
         <div class="container">
             <nav>
-                <h1 class="logo">Portfolio Website</h1>
+                <h1>Yasmeen's Portfolio</h1>
                 <ul id="menus">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Education </a></li>
+                    <li><a href="#services">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#internships">Internships</a>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <h1>Hi, I'm Yasmeen Shaik</h1>
-                 <p>I am a Frontend Developer</p>
-                <h2>I love learning about new things</h2>
-              
+                <h1>Hi, I'm <span class="highlight">Yasmeen Shaik</span></h1>
+                <p>A passionate <strong>Frontend Developer</strong> and <strong>AI & ML enthusiast</strong> eager to explore and innovate.</p>
+                <!-- <div class="header-image">
+                    <img src="yasmeen.jpeg" alt="Yasmeen Shaik">
+                </div> -->
             </div>
+            
+            
         </div>
-    </div>
+    </header>
 
-
-    <div id="about">
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
             <div class="row">
-                <div class="abt-col-1">
-                    <img src="student.jpg">
-                </div>
                 <div class="abt-col-2">
-                    <h1 class="sub-header">About me </h1>
-
+                    <h1 class="sub-header">About Me</h1>
+                    <p>I am Yasmeen Shaik, currently pursuing a B. Tech in Computer Science and Engineering with a specialization in AI and ML at R.V.R. & J.C. College of Engineering. With a 9.77 CGPA, I have consistently ranked 2nd in my department for the first, second and third years of my B. Tech program and received academic awards, showcasing my hard work, and dedication. I am passionate about Artificial Intelligence, Machine Learning, and developing innovative web applications.</p>
                     <div class="tabs">
                         <p class="tab-links act-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
                     </div>
-
                     <div class="tab-conts act-tab" id="skills">
                         <ul>
-                            <li><span>Languages</span><br/>English,Hindi and Telugu</li>
-                            <li><span>Programming Languages</span><br/>C, Python,Java</li>
-                            <li><span>Front-End</span><br/> HTML, CSS, Javascript</li>
-                            <li><span>Back-End</span><br/>PHP</li>
-                            <li><span>Database</span><br/>SQL</li>
-                            
+                            <li><strong>Languages:</strong> English, Hindi, Telugu</li>
+                            <li><strong>Programming Languages:</strong> C, Python, Java</li>
+                            <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+                            <li><strong>Database:</strong> SQL</li>
+                            <li><strong>Version Control:</strong> Git, GitHub</li>
+                            <li><strong>Soft Skills:</strong>Communication, Team Work, Problem Solving, Flexible</li>
                         </ul>
                     </div>
-
-                    <div class="tab-conts" id="experience">
+                    <div class="tab-conts" id="certifications">
                         <ul>
-                            <li>* Internship on AI at Pantech Solutions</li>
-                            <li>* Internship in python at Pantech Solution</li>
-                            <li>* Currently web developer at Bharat Intern</li>
+                            <li> NPTEL The Joy of computing using Python, secured 83% (2024).</li>
+                            <li>NPTEL Privacy and Security in online social media with 85% (2024).</li>
+                            <li>NPTEL Public Speaking, achieved 80% (2023).</li>
+                            <li>
+                                NPTEL Data Science for Engineers, secured 80%(2024).
+                            </li>
                         </ul>
                     </div>
-
-
-                </div>
-                <div class="resume">
-                    <button class="btn btncv">Hire Me</button>
                 </div>
             </div>
         </div>
-    </div>
-  <div id="services">
-          <div class="container">
-              <h1 class="sub-header">Education</h1>
+    </section>
 
-              <div class="services-list">
-                  <div>
-                      <h2>B.Tech</h2>
-                      <p>RVR & JC College of Engineering</p>
-                      <p>CGPA: 9.79</p>
-                  </div>
+    <!-- Education Section -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-header">Education</h1>
+            <div class="services-list">
+                <div class="card">
+                    <h2>B.Tech</h2>
+                    <p>RVR & JC College of Engineering</p>
+                    <p><strong>CGPA:</strong> 9.77</p>
+                </div>
+                <div class="card">
+                    <h2>Intermediate</h2>
+                    <p>Sri Chaitanya Junior College</p>
+                    <p><strong>Marks:</strong> 983/1000</p>
+                </div>
+                <div class="card">
+                    <h2>SSC</h2>
+                    <p>St. Patrick's High School</p>
+                    <p><strong>GPA:</strong> 10/10</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                  <div>
-
-                      <h2>Intermediate</h2>
-                      <p>Sri Chaitanya Junior College </p>
-                      <p>Marks: 983/1000</p>
-                  </div>
-
-                  <div>
-
-                      <h2>SSC</h2>
-                      <p>St. Patrick's High School</p>
-                      <p>GPA: 10/10</p>
-                  </div>
-
-              </div>
-
-          </div>
-
-      </div>
-  <br><br>
-
-    <div id="projects">
+    <!-- Projects Section -->
+    <section id="projects">
         <div class="container">
             <h1 class="sub-header">Projects</h1>
-
             <div class="services-list">
-                <div>
-                    <h2>Hotstar Clone</h2>
-                    <p>Built a simple Hotstar Clone project which is a web-based 
-                    application that provides a user-friendly interface for discovering and 
-                    viewing a library of TV shows and movies.
-                    Technologies used: HTML, CSS, JavaScript</p>
+                <div class="card">
+                    <a href="https://github.com/Yasmeen1211/Video-Streaming-Platform" target="_blank">
+                    <h2>Video Streaming Platform</h2>
+                    <p>Developed a user-friendly web application for discovering and viewing a library of shows and movies.</p>
+                    <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+                    </a>
                 </div>
-
-                <div>
-                   
-                    <h2>Tic-Tac-Toe Game</h2>
-                    <p>This game was developed in python. The game allows two players
-                    to take turns marking X and O on a 3x3 grid.
-                    Technologies used: Python</p>
+                <div class="card">
+                    <a href="https://github.com/Yasmeen1211/Fake-News-Detection" target="_blank">
+                    <h2>Fake News Detection</h2>
+                    <p> Developed a fake news detection system that identify fake news using Convolutional Neural Network.</p>
+                    <p><strong>Technologies used: </strong>Python,CNN</p>
+                    </a>
                 </div>
-
-                <div>
-                  
-                    <h2>Netflix Clone</h2>
-                    <p>A Netflix clone project is a web application designed to replicate the core features and appearance of the official Netflix streaming service. It typically includes a user-friendly interface with sections for browsing movies and TV shows</p>
+                <div class="card">
+                    <a href="https://github.com/Yasmeen1211/Vehicle-Detection-and-Tracking" target="_blank">
+                    <h2>Vehicle Detection & Tracking</h2>
+                    <p>Developed a vehicle detection system that analyzes both video streams and images to assess traffic conditions.</p>
+                    <p><strong>Technologies used:</strong> Python, ML, Computer Vision.</p>
+                    </a>
                 </div>
-
             </div>
-
         </div>
-
-    </div>
-<br><br>
-
-    <div id="contact">
+    </section>
+    <!-- Internships Section -->
+    <section id="internships">
         <div class="container">
+            <h1 class="sub-header">Internships</h1>
+            <div class="services-list">
+                <div class="card">
+                    <h2>PANTECH SOLUTIONS - AI Internship</h2>
+                    
+                    <p>Developed projects on vehicle detection and tracking using computer vision, ML, and Python.</p>
+                    
+                </div>
+                <div class="card">
+                    <h2>BHARAT INTERN - Web Development Internship</h2>
+                    <p>Developed a professional portfolio website and a weather forecasting web application using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="card">
+                    <h2>SKILLDZIRE - Data Science Internship </h2>
+                    <p>Learned key concepts like Numpy, Pandas, Linear Regression, Multiple Linear Regression, SQL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-header">Let's Connect</h1>
             <div class="row">
                 <div class="contact-l">
-                    <h1 class="sub-header">Let's Connect</h1>
-                    <p> <i class="fa-solid fa-envelope"></i>yasmeenshaik1211@gmail.com</p>
+                    <p><i class="fa-solid fa-envelope"></i> yasmeenshaik1211@gmail.com</p>
                     <div class="social">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="www.linkedin.com/in/yasmeen-shaik-659487259/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Yasmeen1211" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>
-
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yasmeen-shaik-659487259/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Yasmeen1211" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-
                 <div class="contact-r">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Name" required>
                         <input type="email" name="Email" placeholder="Email" required>
-                        <textarea name="Message" id=""  rows="6" placeholder="Message"></textarea>
-                        <button type="submit" class="btn btncv">Submit</button>
+                        <textarea name="Message" rows="6" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn">Submit</button>
                     </form>
                     <span id="submit-msg"></span>
                 </div>
-
             </div>
         </div>
-
         <div class="copyright">
-            <p>©️ 2023 Yasmeen Shaik. All rights reserved.</p>
+            <p>&copy; 2023 Yasmeen Shaik. All rights reserved.</p>
         </div>
-
-    </div>
-
+    </section>
 </body>
 
 </html>
